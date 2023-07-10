@@ -20,7 +20,7 @@ def predict(input):
     
     message_history.append({"role": "assistant", "content": f"{reply_content}"}) 
     
-    # get pairs of msg["content"] from message history, skipping the pre-prompt:              here.
+    # get pairs of msg["content"] from message history, skipping the pre-prompt: here.
     response = [(message_history[i]["content"], message_history[i+1]["content"]) for i in range(2, len(message_history)-1, 2)]  # convert to tuples of list
     return response
 
@@ -46,12 +46,14 @@ if __name__=='__main__':
         This function processes the input and generates a response from the chatbot, 
         which is displayed in the output area.'''
         txt.submit(predict, txt, chatbot) # submit(function, input, output)
-        #txt.submit(lambda :"", None, txt)  #Sets submit action to lambda function that returns empty string 
+        #txt.submit(lambda :"", None, txt)  
+        #Sets submit action to lambda function that returns empty string 
 
         '''
         sets the submit action of the Textbox to a JavaScript function that returns an empty string. 
-        This line is equivalent to the commented out line above, but uses a different implementation. 
-        The _js parameter is used to pass a JavaScript function to the submit method.'''
-        txt.submit(None, None, txt, _js="() => {''}") # No function, no input to that function, submit action to textbox is a js function that returns empty string, so it clears immediately.
+        The _js parameter is used to pass a JavaScript function to the submit method.
+        No function, no input to that function, submit action to textbox is a js function that returns empty string, so it clears immediately.
+        '''
+        txt.submit(None, None, txt, _js="() => {''}") 
             
     demo.launch()
