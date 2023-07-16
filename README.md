@@ -11,13 +11,13 @@ The Joke Bot is designed to create a joke based on a user-specified subject matt
 1. Clone the repository.
 
 ```bash
-git clone https://github.com/yourusername/joke-bot.git
+git clone https://github.com/gambiTarun/Joke-Bot.git
 ```
 
 2. Move into the cloned repository.
 
 ```bash
-cd joke-bot
+cd Joke-Bot
 ```
 
 3. Install the required packages.
@@ -32,10 +32,10 @@ Note: This code uses the `openai` and `gradio` Python libraries. Make sure to in
 
 ## Usage
 
-You can start the joke bot by running the `joke_bot.py` script.
+You can start the joke bot by running the `joke-bot.py` script.
 
 ```bash
-python joke_bot.py
+python joke-bot.py
 ```
 
 This will launch a Gradio interface in your web browser. Enter the subject of your joke into the text box and press Enter to get a joke.
