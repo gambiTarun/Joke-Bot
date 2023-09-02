@@ -50,10 +50,3 @@ When a user submits text, it calls the `predict` function with the input text. T
 
 This project is licensed under the terms of the MIT license.
 
-## Contributing
-
-We welcome contributions to this project. Please submit a pull request with your changes.
-
-## Support
-
-If you encounter any issues while using this code, please submit an issue in the issue tracker.
